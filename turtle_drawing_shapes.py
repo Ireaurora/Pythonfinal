@@ -19,7 +19,7 @@ def what_shape():
         for n in range(repetition):
             draw_circle(-length / 2, length / 2, length)
     else:
-        print("I can't draw that yet")
+        print("I can't draw that yet, sorry")
 
 
 def draw_square(start_x, start_y, size):
@@ -41,6 +41,7 @@ def draw_circle(start_x, start_y, size):
 
     for i in range(100):
         my_turtle.circle(10 + i, 45)
+
 
 what_shape()
 
