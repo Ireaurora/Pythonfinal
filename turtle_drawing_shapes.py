@@ -18,6 +18,12 @@ def what_shape():
     elif shape == "Circle" and repetition <= 100:
         for n in range(repetition):
             draw_circle(-length / 2, length / 2, length)
+    elif shape == "Triangle" and repetition <= 100:
+        for n in range(repetition):
+            draw_equilatertriangle(-length / 2, length / 2, length)
+    elif shape == "Pentagon" and repetition <= 100:
+        for n in range(repetition):
+            draw_pentagon(-length / 2, length / 2, length)
     else:
         print("I can't draw that yet, sorry")
 
@@ -42,6 +48,27 @@ def draw_circle(start_x, start_y, size):
     for i in range(100):
         my_turtle.circle(10 + i, 45)
 
+def draw_equilatertriangle(start_x, start_y, size):
+    my_turtle.penup()
+    my_turtle.goto(start_x, start_y)
+    my_turtle.pendown()
+
+    for i in range(3):
+        my_turtle.forward(size)
+        my_turtle.right(60)
+
+    my_turtle.penup()
+
+def draw_pentagon(start_x, start_y, size):
+    my_turtle.penup()
+    my_turtle.goto(start_x, start_y)
+    my_turtle.pendown()
+
+    for i in range(5):
+        my_turtle.forward(size)
+        my_turtle.right(108)
+
+    my_turtle.penup()
 
 what_shape()
 
