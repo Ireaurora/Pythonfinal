@@ -1,19 +1,23 @@
 primes = [2, 3, 5, 7]
+
 factors = []
 #Challenge 1
 #The Basics
 
-def testingprimes(x):
-    if x > 1:
-        for i in range(2, 49):
-            if x % i == 0:
-                return False
-            return True
-
+num = int(input("What number would you like to test?"))
+def testing_prime_number(num):
+    if num > 1:
+        # checking for factors
+        for i in range(2, num):
+            if (num % i) == 0:
+                print(num, "is not a prime number")
+                print(i, "times", num // i, "is", num)
+                break
         else:
-            return False
+            print(num, "is a prime number")
+    else:
+        print(num, "is not a prime number because it's less than 1 and prime numbers are greater than one")
 
-print(testingprimes(332893298))
 
 #The advanced bit
 def testingmoreprimes(x):
@@ -67,9 +71,6 @@ def savingprimes(x):
 def primeslist(x):
     factors.add(x)
     return factors
-
-
-
 
 
 
