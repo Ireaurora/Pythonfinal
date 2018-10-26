@@ -23,7 +23,7 @@ for char in sampleText:
         array = array + char
 
 def findingspaces(array):
-    newarray = []
+    newarray = [0,]
     a = ' '
     for index in range(len(array)):
         if array[index] == a:
@@ -38,13 +38,14 @@ print(newarray)
 
 
 def joining(newarray, array):
-    result = []
-    i = 0
-    size = len(newarray)
-    for i in newarray:
-        new = newarray[i]
-        next = newarray[i+1]
-        print(''.join(array[new:next]))
+    hello = 0
+    start = 1
+    for number in newarray:
+        print(''.join(array[hello:start]))
+        hello = start
+        start += 1
 
 
 joining(newarray,array)
+
+
