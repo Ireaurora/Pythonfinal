@@ -1,6 +1,6 @@
 #declare the string you want to order
 listing = list(input("What list would you like to order?"))
-
+ #selection sort is quadratic because there are two loops that go through the list 
 def SelectionSort(listing):
     for pointer_a in range(len(listing)):
         min = pointer_a;
