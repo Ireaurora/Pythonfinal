@@ -71,16 +71,3 @@ def savingprimes(x):
 def primeslist(x):
     factors.add(x)
     return factors
-
-
-
-
-
-
-
-
-
-
-
-
-
