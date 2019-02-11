@@ -1,9 +1,9 @@
-listing = list(input("What list would you like to check?"))
-x = int(input("What number are you loooking for?"))
 #This algorithm goes and divides the list in half continously checking which one
 #the number we're looking for
 #it has a complexity of O(log(n)) because the number of search operations grows
 #more slowly than the list
+listing = list(input("What list would you like to check?"))
+x = int(input("What number are you loooking for?"))
 
 def BinarySearch(listing, x):
     l = 1
