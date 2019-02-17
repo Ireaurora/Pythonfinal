@@ -62,6 +62,7 @@ def Check():
             print("File not found")
     if fp == 2:
         path = input("Enter the directory path:")
+        os.path.isfile(path)
         if os.path.isdir(path) == False:
             print("File not found")
         else:
@@ -109,7 +110,7 @@ while (run==1):
     print('>>>>>>>>Python 3 File Management<<<<<<<< \n')
     print("Current time and date is", time_string)
     print("Choose an option by inserting its number")
-    options = int(input("1.Read a file,'\n' 2. Write to a file,'\n' 3. Append text to a file,'\n' 4.Delete a file, '\n'5.List files in a directory, '\n'6.Check file existance, '\n'7.Move a file, '\n'8.Copy a file,'\n' 9. Create an directory, '\n'10.Open a program, '\n'11.Exit "))
+    options = int(input("\n1.Read a file,\n2.Write to a file,\n3.Append text to a file,\n4.Delete a file,\n5.List files in a directory, \n6.Check file existance,\n7.Move a file,\n8.Copy a file,\n9.Create an directory,\n10.Open a program,\n11.Exit "))
     if options ==1 :
         Read()
     if options ==2 :
@@ -131,7 +132,6 @@ while (run==1):
     if options ==10 :
         Opening_files()
     if options ==11 :
-
         run = int(input("1.Return to menu\n2.Exit \n"))
     if run ==2:
         exit()
