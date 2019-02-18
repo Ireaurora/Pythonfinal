@@ -12,6 +12,11 @@ for j in search(query, tld="co.in", num=10, stop=1, pause=2):
     list.append(j)
     print(j)
 
-url = list[0]
+choice = int(input("Which URL would you like to open?"))
+if choice < 10:
+    url = list[choice]
+else:
+    print("Out of the range")
+    
 print(url)
 webbrowser.open_new(url)
