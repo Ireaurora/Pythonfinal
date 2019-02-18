@@ -1,3 +1,5 @@
+import webbrowser
+list = []
 try:
     from googlesearch import search
 except ImportError:
@@ -7,4 +9,9 @@ except ImportError:
 query = input("What key word do you want to look for?")
 
 for j in search(query, tld="co.in", num=10, stop=1, pause=2):
+    list.append(j)
     print(j)
+
+url = list[0]
+print(url)
+webbrowser.open_new(url)
