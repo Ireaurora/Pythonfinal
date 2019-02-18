@@ -1,3 +1,5 @@
+#This should be optimised for a macOS, it might not work in a different OS
+
 import webbrowser
 list = []
 try:
@@ -17,6 +19,6 @@ if choice < 10:
     url = list[choice]
 else:
     print("Out of the range")
-    
+
 print(url)
 webbrowser.open_new(url)
